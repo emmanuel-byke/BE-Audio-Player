@@ -1,0 +1,4503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>390</width>
+    <height>172</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(100, 100, 100, 0);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">border-radius: 70px;
+</string>
+   </property>
+   <widget class="QLabel" name="backgroundPic">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:backgrounds/res/Images/cat.jpeg);
+border-radius: 70px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="backgroundPicMask">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:  rgba(100, 100, 100, 100);
+border-radius: 70px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QFrame" name="mainFrame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>391</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#mainFrame{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.830727, y2:0.938, stop:0 rgba(164, 17, 49, 37), stop:0.506266 rgba(164, 17, 107, 51), stop:0.729323 rgba(127, 49, 183, 70), stop:1 rgba(42, 33, 175, 24));
+	
+	border-bottom-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(0, 0, 0, 255), stop:0.05 rgba(14, 8, 73, 255), stop:0.36 rgba(28, 17, 145, 255), stop:0.6 rgba(126, 14, 81, 255), stop:0.75 rgba(234, 11, 11, 255), stop:0.79 rgba(244, 70, 5, 255), stop:0.86 rgba(255, 136, 0, 255), stop:0.935 rgba(239, 236, 55, 255));
+
+border-right-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(0, 0, 0, 255), stop:0.05 rgba(14, 8, 73, 255), stop:0.36 rgba(28, 17, 145, 255), stop:0.6 rgba(126, 14, 81, 255), stop:0.75 rgba(234, 11, 11, 255), stop:0.79 rgba(244, 70, 5, 255), stop:0.86 rgba(255, 136, 0, 255), stop:0.935 rgba(239, 236, 55, 255));
+
+border-left-color: qlineargradient(spread:pad, x1:0.0229121, y1:0.142, x2:1, y2:0, stop:0 rgba(233, 12, 12, 77), stop:0.0769231 rgba(255, 0, 62, 71), stop:0.372253 rgba(255, 0, 164, 71), stop:1 rgba(255, 255, 255, 54)); 
+
+	border-radius: 70px;
+	border-width: 1;
+    border-style: solid;
+}
+
+QLCDNumber {
+                border: 1px dotted qradialgradient(
+                    cx: 0.5, cy: 0.5,
+                    fx: 0.5, fy: 0.5,
+                    radius: 1.0,
+                    stop: 0.0 rgba(255, 0, 0, 255),
+                    stop: 0.5 rgba(255, 255, 255, 255),
+                    stop: 1.0 rgba(0, 0, 255, 255)
+);
+     color: white;
+}
+
+QLabel{
+	color:  #1FFF6B;
+}
+
+
+#skin_progress::groove:horizontal {
+   				background: qlineargradient(spread:pad, x1:0, y1:0.477273, x2:1, y2:0.443, stop:0 rgba(81, 83, 84, 255), stop:1 rgba(50, 52, 61, 255));
+                border: 1px solid #bbb;
+                height: 10px;
+                margin: 1px;
+				border-radius: 5px;
+}
+
+#skin_progress::handle:horizontal {
+                background: qradialgradient(cx:0.5, cy:0.5, radius: 1, fx:0.5, fy:0.5, stop:0 #EEE, stop:1 #999);
+                width: 16px;
+                height: 12px;
+                margin: -5px 0;
+                border-radius: 3px;
+}
+
+#skin_progress::sub-page:horizontal {
+                background: qlineargradient(spread:pad, x1:0, y1:0.477273, x2:1, y2:0.443, stop:0 rgba(255, 141, 198, 255), stop:1 rgba(255, 0, 164, 255));
+                border: 1px solid #bbb;
+                height: 4px;
+}
+
+QLabel#skin_mask_label{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 145, 201, 255), stop:0.495652 rgba(255, 72, 204, 255), stop:0.496894 rgba(255, 72, 204, 255), stop:1 rgba(255, 0, 167, 255));
+border-radius: 57px;
+
+background-color: rgb(36, 36, 48);
+}
+#skin_background {
+		background-color: rgb(36, 36, 48);
+}
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="headerFrame">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>0</width>
+       <height>0</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="appName">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>0</y>
+        <width>151</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="WindowText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>116</red>
+            <green>238</green>
+            <blue>21</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Button">
+          <brush brushstyle="SolidPattern">
+           <color alpha="0">
+            <red>100</red>
+            <green>100</green>
+            <blue>100</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Text">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>116</red>
+            <green>238</green>
+            <blue>21</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="ButtonText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>116</red>
+            <green>238</green>
+            <blue>21</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="0">
+            <red>100</red>
+            <green>100</green>
+            <blue>100</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Window">
+          <brush brushstyle="SolidPattern">
+           <color alpha="0">
+            <red>100</red>
+            <green>100</green>
+            <blue>100</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="PlaceholderText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="128">
+            <red>116</red>
+            <green>238</green>
+            <blue>21</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="WindowText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>116</red>
+            <green>238</green>
+            <blue>21</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Button">
+          <brush brushstyle="SolidPattern">
+           <color alpha="0">
+            <red>100</red>
+            <green>100</green>
+            <blue>100</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Text">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>116</red>
+            <green>238</green>
+            <blue>21</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="ButtonText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>116</red>
+            <green>238</green>
+            <blue>21</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="0">
+            <red>100</red>
+            <green>100</green>
+            <blue>100</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Window">
+          <brush brushstyle="SolidPattern">
+           <color alpha="0">
+            <red>100</red>
+            <green>100</green>
+            <blue>100</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="PlaceholderText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="128">
+            <red>116</red>
+            <green>238</green>
+            <blue>21</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="WindowText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>116</red>
+            <green>238</green>
+            <blue>21</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Button">
+          <brush brushstyle="SolidPattern">
+           <color alpha="0">
+            <red>100</red>
+            <green>100</green>
+            <blue>100</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Text">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>116</red>
+            <green>238</green>
+            <blue>21</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="ButtonText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>116</red>
+            <green>238</green>
+            <blue>21</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="0">
+            <red>100</red>
+            <green>100</green>
+            <blue>100</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Window">
+          <brush brushstyle="SolidPattern">
+           <color alpha="0">
+            <red>100</red>
+            <green>100</green>
+            <blue>100</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="PlaceholderText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="128">
+            <red>116</red>
+            <green>238</green>
+            <blue>21</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <family>Ink Free</family>
+        <pointsize>20</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="toolTip">
+       <string extracomment="This Program was designed and implemented by Basikolo Emmanuel (BE)"/>
+      </property>
+      <property name="toolTipDuration">
+       <number>20</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color : #74ee15; </string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/appName/res/Labels/cooltext441067491928042.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="loginBtn">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>10</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/log-in.svg</normaloff>:/icons/res/Icons/log-in.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="settBtn">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>10</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/settings.svg</normaloff>:/icons/res/Icons/settings.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="exitBtn">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>20</y>
+        <width>29</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#exitBtn:hover{
+	background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 0, 0, 110), stop:0.194234 rgba(205, 0, 0, 110), stop:0.455235 rgba(194, 21, 47, 110), stop:0.591806 rgba(183, 36, 64, 110), stop:0.644917 rgba(245, 38, 21, 112), stop:0.942337 rgba(255, 26, 37, 174), stop:1 rgba(241, 2, 65, 90));
+
+	border-radius: 10;
+	border-width: 1;
+    border-style: solid;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/power.svg</normaloff>:/icons/res/Icons/power.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>25</width>
+        <height>25</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="minimizeBtn">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>20</y>
+        <width>29</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#minimizeBtn:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+
+	border-radius: 6;
+	border-width: 1;
+    border-style: solid;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/minus.svg</normaloff>:/icons/res/Icons/minus.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>25</width>
+        <height>25</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="visualizerFrame">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>0</width>
+       <height>0</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#visualizerFrame{
+	
+	border-bottom-color: qlineargradient(spread:pad, x1:0.465, y1:0, x2:0.483925, y2:1, stop:0 rgba(5, 77, 0, 95), stop:0.34598 rgba(0, 247, 16, 255), stop:0.485998 rgba(255, 255, 255, 255), stop:0.566396 rgba(255, 255, 255, 255), stop:0.706414 rgba(0, 247, 16, 255), stop:1 rgba(5, 77, 0, 94));
+
+	border-top-color: qlineargradient(spread:pad, x1:0.465, y1:0, x2:0.483925, y2:1, stop:0 rgba(5, 77, 0, 95), stop:0.34598 rgba(0, 247, 16, 255), stop:0.485998 rgba(255, 255, 255, 255), stop:0.566396 rgba(255, 255, 255, 255), stop:0.706414 rgba(0, 247, 16, 255), stop:1 rgba(5, 77, 0, 94));
+
+	border-left-color: qlineargradient(spread:pad, x1:1, y1:0.482636, x2:0, y2:0.477, stop:0 rgba(5, 77, 0, 95), stop:0.34598 rgba(0, 247, 16, 255), stop:0.485998 rgba(255, 255, 255, 255), stop:0.566396 rgba(255, 255, 255, 255), stop:0.706414 rgba(0, 247, 16, 255), stop:1 rgba(5, 77, 0, 94));
+	
+border-right-color: qlineargradient(spread:pad, x1:1, y1:0.482636, x2:0, y2:0.477, stop:0 rgba(5, 77, 0, 95), stop:0.34598 rgba(0, 247, 16, 255), stop:0.485998 rgba(255, 255, 255, 255), stop:0.566396 rgba(255, 255, 255, 255), stop:0.706414 rgba(0, 247, 16, 255), stop:1 rgba(5, 77, 0, 94));
+
+	border-radius: 0px;
+	border-width: 5px;
+    border-style: solid;
+
+background-color: qlineargradient(spread:pad, x1:0.457, y1:0, x2:0.309, y2:1, stop:0 rgba(222, 88, 88, 255), stop:1 rgba(37, 22, 72, 255));;
+
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>351</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Hello, My name is Emmanuel Basikolo. </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="switchVisualizer">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>10</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+        <bold>true</bold>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>Switch</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="controlFrame">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>0</width>
+       <height>0</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#controlFrame{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.477273, x2:1, y2:0.443, stop:0 rgba(220, 36, 36, 255), stop:1 rgba(74, 86, 157, 255));
+border-bottom-right-radius: 25px;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 25px;
+}
+
+
+
+
+</string>
+     </property>
+     <widget class="QPushButton" name="repeate">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>11</y>
+        <width>34</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/repeat.svg</normaloff>:/icons/res/Icons/repeat.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="prev">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>11</y>
+        <width>34</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/arrow-left-circle.svg</normaloff>:/icons/res/Icons/arrow-left-circle.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="play">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>1</y>
+        <width>54</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/play-circle.svg</normaloff>:/icons/res/Icons/play-circle.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="next">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>11</y>
+        <width>34</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/arrow-right-circle.svg</normaloff>:/icons/res/Icons/arrow-right-circle.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="togglePlaylist">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>10</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/align-justify.svg</normaloff>:/icons/res/Icons/align-justify.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="open">
+      <property name="geometry">
+       <rect>
+        <x>1</x>
+        <y>11</y>
+        <width>34</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/music.svg</normaloff>:/icons/res/Icons/music.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="likeAudio">
+      <property name="geometry">
+       <rect>
+        <x>35</x>
+        <y>11</y>
+        <width>34</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/thumbs-up.svg</normaloff>:/icons/res/Icons/thumbs-up.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="starAudio">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>10</y>
+        <width>34</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/star.svg</normaloff>:/icons/res/Icons/star.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="shuffle">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>10</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/shuffle.svg</normaloff>:/icons/res/Icons/shuffle.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="volControlFrame">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>0</width>
+       <height>0</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QSlider" name="volumeSlider">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>7</y>
+        <width>231</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="mute">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>3</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/volume-2.svg</normaloff>:/icons/res/Icons/volume-2.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="volLabel">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>3</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="threeAudioFrame">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>0</width>
+       <height>0</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#threeAudioFrame{
+	background-color: qlineargradient(spread:pad, x1:0.42633, y1:0, x2:0.413, y2:1, stop:0 rgba(222, 142, 233, 91), stop:1 rgba(0, 0, 0, 70));
+	
+	border-bottom-color: qlineargradient(spread:pad, x1:0.476, y1:0, x2:0.483925, y2:1, stop:0 rgba(121, 0, 0, 255), stop:0.318937 rgba(247, 21, 0, 178), 		stop:0.418605 rgba(255, 217, 217, 255), stop:0.549834 rgba(255, 217, 217, 255), stop:0.647841 rgba(247, 21, 0, 255), stop:1 rgba(121, 0, 0, 178));
+
+	border-top-color: qlineargradient(spread:pad, x1:0.476, y1:0, x2:0.483925, y2:1, stop:0 rgba(121, 0, 0, 255), stop:0.318937 rgba(247, 21, 0, 178), 		stop:0.418605 rgba(255, 217, 217, 255), stop:0.549834 rgba(255, 217, 217, 255), stop:0.647841 rgba(247, 21, 0, 255), stop:1 rgba(121, 0, 0, 178));
+
+	border-left-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.507, stop:0 rgba(121, 0, 0, 172), stop:0.318937 rgba(247, 21, 0, 255), stop:0.418605 rgba(255, 217, 217, 255), stop:0.549834 rgba(255, 217, 217, 255), stop:0.647841 rgba(247, 21, 0, 255), stop:1 rgba(121, 0, 0, 173));
+	border-right-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.507, stop:0 rgba(121, 0, 0, 172), stop:0.318937 rgba(247, 21, 0, 255), stop:0.418605 rgba(255, 217, 217, 255), stop:0.549834 rgba(255, 217, 217, 255), stop:0.647841 rgba(247, 21, 0, 255), stop:1 rgba(121, 0, 0, 173));
+
+	border-radius: 0px;
+	border-width: 5px;
+    border-style: solid;
+}
+
+QPushButton{
+border-radius: 10px;
+background-color: transparent;
+color: white;
+}
+
+QPushButton:hover{
+background-color: gray;
+}
+
+QPushButton:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color: green;
+}
+
+
+
+</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QFrame" name="firstAudio">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>5</y>
+        <width>131</width>
+        <height>120</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="fTitle">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>131</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>I Feel it comming</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fArtist">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>80</y>
+         <width>131</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>The weeknd ft daft punk</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fPic">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>61</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>70</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="resources.qrc">:/backgrounds/res/Images/compact-disk-free-png.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="nextList">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>130</y>
+        <width>41</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/backgrounds/res/Images/Arrow_png_image.png</normaloff>:/backgrounds/res/Images/Arrow_png_image.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QFrame" name="secondAudio">
+      <property name="geometry">
+       <rect>
+        <x>155</x>
+        <y>5</y>
+        <width>171</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="sTitle">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>171</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>I Feel it comming</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="sArtist">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>90</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>The weeknd ft daft punk</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="sPic">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>20</y>
+         <width>71</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="resources.qrc">:/backgrounds/res/Images/compact-disk-free-png.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="thirdAudio">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>5</y>
+        <width>121</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="tTitle">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>131</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>I Feel it comming</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="tArtist">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>80</y>
+         <width>121</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>The weeknd ft daft punk</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="tPic">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>61</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>70</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="resources.qrc">:/backgrounds/res/Images/compact-disk-free-png.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="prevList">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>135</y>
+        <width>41</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/backgrounds/res/Images/Arrow-1024x400.png</normaloff>:/backgrounds/res/Images/Arrow-1024x400.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QFrame" name="playlistBottomSelector">
+      <property name="geometry">
+       <rect>
+        <x>48</x>
+        <y>130</y>
+        <width>381</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	border-radius: 5px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="supportPlaylistItem1">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="resources.qrc">:/backgrounds/res/Images/cat.jpeg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="supportPlaylistItem2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>0</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="resources.qrc">:/backgrounds/res/Images/cat.jpeg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="supportPlaylistItem3">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>0</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="resources.qrc">:/backgrounds/res/Images/cat.jpeg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="supportPlaylistItem4">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>0</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid blue;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="resources.qrc">:/backgrounds/res/Images/cat.jpeg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="supportPlaylistItem5">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>0</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="resources.qrc">:/backgrounds/res/Images/cat.jpeg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="supportPlaylistItem6">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>0</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="resources.qrc">:/backgrounds/res/Images/cat.jpeg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="supportPlaylistItem7">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>0</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="resources.qrc">:/backgrounds/res/Images/cat.jpeg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <zorder>secondAudio</zorder>
+     <zorder>thirdAudio</zorder>
+     <zorder>prevList</zorder>
+     <zorder>playlistBottomSelector</zorder>
+     <zorder>nextList</zorder>
+     <zorder>firstAudio</zorder>
+    </widget>
+    <widget class="QFrame" name="seekFrame">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>0</width>
+       <height>0</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="startTime">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>3</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>30:20</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QSlider" name="playPos">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>3</y>
+        <width>301</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#playPos::groove:horizontal {
+    border: 1px solid #999999;
+    height: 10px;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #B1B1B1, stop:1 #c4c4c4);
+}
+
+#playPos::handle:horizontal {
+    background: qradialgradient(cx:0.3, cy:0.3, radius: 1.5, fx:0.3, fy:0.3, stop:0 #ffdfce, stop:1 #ff9a9a);
+    width: 20px;
+    height: 20px;
+    margin: -5px 0;
+    border-radius: 10px;
+}
+</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="endTime">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>3</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>50:20</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="settingsFrame">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>0</width>
+       <height>0</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame#settingsFrame{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0.0401046 rgba(1, 255, 39, 123), stop:0.474281 rgba(255, 0, 0, 132), stop:0.498692 rgba(255, 0, 0, 142), stop:0.896251 rgba(0, 0, 0, 141));
+	border-radius: 10px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>481</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget #generalSettTab, #tab, #tab_2{
+background-color: qlineargradient(spread:pad, x1:0.457, y1:0, x2:0.309, y2:1, stop:0 rgba(222, 88, 88, 255), stop:1 rgba(37, 22, 72, 255));
+border-radius:10px;
+}
+
+QGroupBox{
+	border-radius:19px;
+	background-color: qlineargradient(spread:pad, x1:0.143983, y1:0.665, x2:1, y2:0.102, stop:0 rgba(48, 51, 137, 166), stop:0.135693 rgba(49, 93, 118, 166), stop:0.26647 rgba(118, 139, 156, 166), stop:1 rgba(255, 255, 255, 151));
+}
+	</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="generalSettTab">
+       <attribute name="title">
+        <string>Tab 1</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>151</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Adding Files</string>
+        </property>
+        <widget class="QRadioButton" name="settingsAddLastItem">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>106</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Add as Last item</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="settingsAddFistItem">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>107</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Add as First item</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="settingsPlayFromPlaylist">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>110</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Play from playlist</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="settingsClearList">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>82</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>clear old list</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="settingsWaitCurrentAudio">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>110</y>
+           <width>133</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>wait for current audio</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="settingsSortPlaylist">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>130</y>
+           <width>131</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Auto Sort Playlist</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>0</y>
+          <width>91</width>
+          <height>191</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Sort by</string>
+        </property>
+        <widget class="QRadioButton" name="settingsSortFileName">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>70</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>File name</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="settingsSortTitle">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>41</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Title</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="settingsSortArtist">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>47</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Artist</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="settingsSortAlbum">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>55</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Album</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="settingsSortPath">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>100</y>
+           <width>43</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Path</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="settingsSortSize">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>120</y>
+           <width>39</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Size</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="settingsSortDuration">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>140</y>
+           <width>65</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Duration</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="settingSortDescending">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>170</y>
+           <width>72</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Descending</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>0</y>
+          <width>157</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Manager</string>
+        </property>
+        <widget class="QPushButton" name="settingsRemoveCurrent">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>114</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>remove current audio</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="settingsRemoveUnavailable">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>139</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Remove unavailable audio</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="settingsRemoveAll">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>55</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>remove all</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="settingsFilterSmall">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>98</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>filter small files</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="settingsAddAll">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>100</y>
+           <width>75</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>add all</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QCheckBox" name="settingsAutoLoad">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>230</y>
+          <width>171</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Auto Load Last Used Playlist </string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="settingsReset">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>230</y>
+          <width>75</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Reset</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Tab 2</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_4">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>0</y>
+          <width>221</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Change audio</string>
+        </property>
+        <widget class="QCheckBox" name="settingsFadeIn">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>20</y>
+           <width>76</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Fade in</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="settingsFadeOut">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>40</y>
+           <width>76</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Fade out</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="settingsIncreaseSpeed">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>80</y>
+           <width>151</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>increase playback speed</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="settingsReduceSpeed">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>100</y>
+           <width>151</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>reduce playback speed</string>
+         </property>
+        </widget>
+        <widget class="QSpinBox" name="settingsFadeInSpin">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>20</y>
+           <width>51</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="maximum">
+          <number>20</number>
+         </property>
+        </widget>
+        <widget class="QSpinBox" name="settingsFadeOutSpin">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>40</y>
+           <width>51</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="maximum">
+          <number>20</number>
+         </property>
+        </widget>
+        <widget class="QSpinBox" name="settingsIncreaseSpeedSpin">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>80</y>
+           <width>51</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="maximum">
+          <number>20</number>
+         </property>
+        </widget>
+        <widget class="QSpinBox" name="settingsReduceSpeedSpin">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>100</y>
+           <width>51</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="maximum">
+          <number>20</number>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_5">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>160</y>
+          <width>121</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>At End of List</string>
+        </property>
+        <widget class="QRadioButton" name="settingsEndForceLoop">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>20</y>
+           <width>121</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Forced Auto loop</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="settingsEndLoopRules">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>40</y>
+           <width>121</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Follow Loop Rules</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_6">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>160</y>
+          <width>121</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Shuffle</string>
+        </property>
+        <widget class="QRadioButton" name="settingsShuffleForceLoop">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>20</y>
+           <width>121</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Forced Auto Loop</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="settingsShuffleLoopRules">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>40</y>
+           <width>121</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Follow Loop Rules</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Page</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_7">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>171</width>
+          <height>211</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Configure Skin</string>
+        </property>
+        <widget class="QCheckBox" name="settingsShowVisualizer">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>20</y>
+           <width>121</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>show visualization</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="settingsShowControls">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>40</y>
+           <width>111</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Show controls</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="settingsMoveSeekDown">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>80</y>
+           <width>161</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>move seek controls down</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="settingsShowSeek">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>60</y>
+           <width>121</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>show seek controls</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="settingsShowAudioSelector">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>100</y>
+           <width>151</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>show audio selector</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="settingsShowHeader">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>150</y>
+           <width>131</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Default header </string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="settingsShowVolumeControl">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>120</y>
+           <width>161</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Show Volume Controls</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="logoCombobox">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>180</y>
+           <width>101</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0.568182, x2:1, y2:0.499, stop:0 rgba(3, 0, 30, 255), stop:0.302486 rgba(115, 3, 192, 255), stop:0.68232 rgba(236, 56, 188, 255), stop:1 rgba(253, 239, 249, 255));
+
+color: white;</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Logo 1</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Logo 2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Logo 3</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Logo 4</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Logo 5</string>
+          </property>
+         </item>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_8">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>10</y>
+          <width>211</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Configure colors</string>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_9">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>120</y>
+          <width>131</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>miscelleneous</string>
+        </property>
+        <widget class="QPushButton" name="settingsChangeBackground">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>20</y>
+           <width>121</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>change background</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="settingsRoundCorners">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>40</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>round-corners</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="settingsChangeSkin">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>70</y>
+           <width>75</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>change skin</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Page</string>
+       </attribute>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="settingBackBtn">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>315</y>
+        <width>121</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 15px;
+	border: 2px solid rgb(69, 0, 71);
+}
+
+QPushButton:hover{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgb(250, 240, 230), stop:0.55 rgb(200, 190, 180));
+}
+
+QPushButton#exitBtn:hover{
+	background-color:blue;
+}
+
+QPushButton:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.732955, x2:1, y2:0.295455, stop:0 rgba(255, 173, 173, 63), stop:1 rgba(255, 173, 173, 87));
+}</string>
+      </property>
+      <property name="text">
+       <string>Back</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/arrow-left.svg</normaloff>:/icons/res/Icons/arrow-left.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="loginFrame">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>0</width>
+       <height>0</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="closeLogin">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#closeLogin{
+border-radius: 5px;
+}
+
+QPushButton#closeLogin:hover{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgb(250, 240, 230), stop:0.55 rgb(200, 190, 180));
+}
+
+QPushButton#closeLogin:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.732955, x2:1, y2:0.295455, stop:0 rgba(255, 173, 173, 63), stop:1 rgba(255, 173, 173, 87));
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/x.svg</normaloff>:/icons/res/Icons/x.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="signupFromRegister">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>330</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <italic>false</italic>
+        <bold>true</bold>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>Sign up</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>0</y>
+        <width>421</width>
+        <height>361</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0.653, y1:0, x2:0.461, y2:1, stop:0 rgb(92, 53, 207), stop:1 rgb(230, 46, 120));
+border-radius: 20px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>0</y>
+        <width>141</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/backgrounds/res/Images/login.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="loginUser">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>280</y>
+        <width>291</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Palatino Linotype</family>
+        <pointsize>15</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#login{
+border-radius: 5px;
+background-color: white;
+color: rgb(187, 42, 157);
+}
+
+QPushButton#login:hover{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgb(250, 240, 230), stop:0.55 rgb(200, 190, 180));
+}
+
+QPushButton#login:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.471591, x2:1, y2:0.517, stop:0 rgba(220, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>Login</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>225</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/icons/res/Icons/lock.svg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>165</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/icons/res/Icons/user.svg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>135</x>
+        <y>170</y>
+        <width>251</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-bottom: 5px solid qlineargradient(spread:pad, x1:0.476, y1:0, x2:0.483925, y2:1, stop:0 rgba(37, 81, 96, 255), stop:0.309912 rgba(207, 234, 245, 255), stop:0.688833 rgba(207, 234, 245, 255), stop:1 rgba(37, 81, 96, 255));
+
+
+
+border-bottom: 5px solid qlineargradient(spread:pad, x1:0.476, y1:0, x2:0.483925, y2:1, stop:0 rgba(80, 0, 106, 179), stop:0.327039 rgba(247, 0, 255, 255), stop:0.418605 rgba(255, 226, 255, 255), stop:0.549834 rgba(255, 226, 255, 255), stop:0.638627 rgba(247, 0, 255, 255), stop:1 rgba(80, 0, 106, 178));
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>135</x>
+        <y>230</y>
+        <width>251</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-bottom: 5px solid qlineargradient(spread:pad, x1:0.476, y1:0, x2:0.483925, y2:1, stop:0 rgba(37, 81, 96, 255), stop:0.309912 rgba(207, 234, 245, 255), stop:0.688833 rgba(207, 234, 245, 255), stop:1 rgba(37, 81, 96, 255));</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>330</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>don't have account?</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>330</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>now</string>
+      </property>
+     </widget>
+     <zorder>label_8</zorder>
+     <zorder>closeLogin</zorder>
+     <zorder>signupFromRegister</zorder>
+     <zorder>label_9</zorder>
+     <zorder>loginUser</zorder>
+     <zorder>label_3</zorder>
+     <zorder>label_2</zorder>
+     <zorder>lineEdit</zorder>
+     <zorder>lineEdit_2</zorder>
+     <zorder>label_10</zorder>
+     <zorder>label_11</zorder>
+    </widget>
+    <widget class="QFrame" name="registerFrame">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>0</width>
+       <height>0</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="loginFromRegister">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>330</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>login</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>451</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0.568182, x2:1, y2:0.499, stop:0 rgba(3, 0, 30, 255), stop:0.302486 rgba(115, 3, 192, 255), stop:0.68232 rgba(236, 56, 188, 255), stop:1 rgba(253, 239, 249, 255));
+border-radius: 20px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>170</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/icons/res/Icons/lock.svg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>130</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/icons/res/Icons/user.svg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>0</y>
+        <width>111</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/backgrounds/res/Images/login.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>50</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Impact</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;</string>
+      </property>
+      <property name="text">
+       <string>Create Account</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="closeRegister">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>10</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#closeRegister{
+background-color: transparent;
+border-radius: 10px;
+}
+
+QPushButton#closeRegister:hover{
+background-color: gray;
+}
+
+QPushButton#closeRegister:pressed{
+	padding-left: 2px;
+	padding-top: 2px;
+	background-color: red;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/x-circle.svg</normaloff>:/icons/res/Icons/x-circle.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>220</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/icons/res/Icons/lock.svg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>140</y>
+        <width>241</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-bottom: 4px solid black;
+border-right: 4px solid black;
+border-radius: 7px;</string>
+      </property>
+      <property name="placeholderText">
+       <string>    Username</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_4">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>180</y>
+        <width>241</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-bottom: 4px solid black;</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>     Password</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_5">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>230</y>
+        <width>241</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-bottom: 4px solid black;</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>     Confirm Password</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="registerBtn">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>270</y>
+        <width>181</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MV Boli</family>
+        <pointsize>18</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#registerBtn{
+border-radius: 20px;
+background-color: transparent;
+color: white;
+border: 1px solid gray;
+}
+
+QPushButton#registerBtn:hover{
+background-color: gray;
+}
+
+QPushButton#registerBtn:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color: green;
+}</string>
+      </property>
+      <property name="text">
+       <string>Register</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>330</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Already signed up?</string>
+      </property>
+     </widget>
+     <zorder>label_12</zorder>
+     <zorder>loginFromRegister</zorder>
+     <zorder>label_6</zorder>
+     <zorder>label_5</zorder>
+     <zorder>label_13</zorder>
+     <zorder>label_14</zorder>
+     <zorder>closeRegister</zorder>
+     <zorder>label_15</zorder>
+     <zorder>lineEdit_3</zorder>
+     <zorder>lineEdit_4</zorder>
+     <zorder>lineEdit_5</zorder>
+     <zorder>registerBtn</zorder>
+     <zorder>label_4</zorder>
+    </widget>
+    <widget class="QFrame" name="playlistFrame">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>0</width>
+       <height>0</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QFrame" name="playlistHeader">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>495</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="playlistName">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Local Playlist</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="sharePlaylist">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>0</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/res/Icons/share-2.svg</normaloff>:/icons/res/Icons/share-2.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="likePlaylist">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>0</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/res/Icons/thumbs-up.svg</normaloff>:/icons/res/Icons/thumbs-up.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="newMenu">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>0</y>
+         <width>40</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/res/Icons/plus-circle.svg</normaloff>:/icons/res/Icons/plus-circle.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="deletePlaylist">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>0</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/res/Icons/x-circle.svg</normaloff>:/icons/res/Icons/x-circle.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="clearPlaylist">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>0</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/res/Icons/minus-circle.svg</normaloff>:/icons/res/Icons/minus-circle.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="removeSelectedSong">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>0</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/res/Icons/delete.svg</normaloff>:/icons/res/Icons/delete.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="lovePlaylist">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>0</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/res/Icons/heart.svg</normaloff>:/icons/res/Icons/heart.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTableView" name="playlistTable">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>30</y>
+        <width>481</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Comic Sans MS</family>
+        <pointsize>9</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-bottom-right-radius: 10px;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 50px;
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="dragEnabled">
+       <bool>true</bool>
+      </property>
+      <property name="dragDropOverwriteMode">
+       <bool>false</bool>
+      </property>
+      <property name="dragDropMode">
+       <enum>QAbstractItemView::DragDrop</enum>
+      </property>
+      <property name="defaultDropAction">
+       <enum>Qt::CopyAction</enum>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>false</bool>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="showGrid">
+       <bool>false</bool>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>481</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:  qlineargradient(spread:pad, x1:0, y1:0.483, x2:1, y2:0.414773, stop:0 rgba(85, 98, 112, 255), stop:1 rgba(255, 107, 107, 200));
+border-bottom-right-radius: 10px;
+border-top-right-radius: 15px;
+border-top-left-radius: 15px;
+border-bottom-left-radius: 50px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>label</zorder>
+     <zorder>playlistHeader</zorder>
+     <zorder>playlistTable</zorder>
+    </widget>
+    <widget class="QFrame" name="volFrame_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>0</width>
+       <height>0</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QFrame" name="volFrameControls_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>51</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+#volFrameControls_2{
+	background-color: qlineargradient(spread:pad, x1:0.457, y1:0, x2:0.309, y2:1, stop:0 rgba(222, 88, 88, 255), stop:1 rgba(37, 22, 72, 255));;
+	border-radius: 15px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="volUpBtn">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>51</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/res/Icons/plus.svg</normaloff>:/icons/res/Icons/plus.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QSlider" name="volSliderAlt">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>30</y>
+         <width>51</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#volSlider_2::groove:vertical {
+    border: 1px solid #999999;
+    width: 4px;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #B1B1B1, stop:1 #c4c4c4);
+}
+
+#volSlider_2::handle:vertical {
+    background: qradialgradient(cx:0.3, cy:0.3, radius: 1.5, fx:0.3, fy:0.3, stop:0 #ffdfce, stop:1 #ff9a9a);
+    width: 20px;
+    height: 20px;
+    margin: -5px 10px;
+    border-radius: 5px;
+}
+</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="volDownBtn">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>140</y>
+         <width>51</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/res/Icons/minus.svg</normaloff>:/icons/res/Icons/minus.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="showVolume">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>160</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/volume-2.svg</normaloff>:/icons/res/Icons/volume-2.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="statusFrame">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>0</width>
+       <height>0</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#statusFrame{
+	background-color: qlineargradient(spread:pad, x1:0.457, y1:0, x2:0.309, y2:1, stop:0 rgba(222, 88, 88, 255), stop:1 rgba(37, 22, 72, 255));;
+	border-radius: 20px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="statusLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>451</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Programmer: Emmanuel Basikolo</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="headerFrameAlt">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>0</width>
+       <height>0</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+border-radius: 5px;
+}
+
+QPushButton:hover{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgb(250, 240, 230), stop:0.55 rgb(200, 190, 180));
+}
+
+QPushButton#exitBtn:hover{
+	background-color:blue;
+}
+
+QPushButton:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.732955, x2:1, y2:0.295455, stop:0 rgba(255, 173, 173, 63), stop:1 rgba(255, 173, 173, 87));
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>0</y>
+        <width>441</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="homeAlt">
+      <property name="geometry">
+       <rect>
+        <x>43</x>
+        <y>0</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/home.svg</normaloff>:/icons/res/Icons/home.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Home</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="exitBtnAlt">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>0</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/power.svg</normaloff>:/icons/res/Icons/power.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="settBtnAlt">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>0</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/tool.svg</normaloff>:/icons/res/Icons/tool.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>30</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Settings</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="playlistAlt">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>0</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/loader.svg</normaloff>:/icons/res/Icons/loader.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>30</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Playlist</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="prevAlt">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>0</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/chevron-left.svg</normaloff>:/icons/res/Icons/chevron-left.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="playAlt">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>0</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/pause.svg</normaloff>:/icons/res/Icons/pause.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="nextAlt">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>0</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/chevron-right.svg</normaloff>:/icons/res/Icons/chevron-right.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressAlt">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>38</y>
+        <width>70</width>
+        <height>1</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QProgressBar::chunk {
+		background-color: red;
+}</string>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+      <property name="textVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="minizeBtnAlt">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>10</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#exitBtn:hover{
+	background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 0, 0, 110), stop:0.194234 rgba(205, 0, 0, 110), stop:0.455235 rgba(194, 21, 47, 110), stop:0.591806 rgba(183, 36, 64, 110), stop:0.644917 rgba(245, 38, 21, 112), stop:0.942337 rgba(255, 26, 37, 174), stop:1 rgba(241, 2, 65, 90));
+
+	border-radius: 10;
+	border-width: 1;
+    border-style: solid;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/minus.svg</normaloff>:/icons/res/Icons/minus.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="loginBtnAlt">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>0</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/log-in.svg</normaloff>:/icons/res/Icons/log-in.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>30</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>login</string>
+      </property>
+     </widget>
+     <zorder>label_7</zorder>
+     <zorder>homeAlt</zorder>
+     <zorder>label_16</zorder>
+     <zorder>exitBtnAlt</zorder>
+     <zorder>settBtnAlt</zorder>
+     <zorder>label_17</zorder>
+     <zorder>playlistAlt</zorder>
+     <zorder>label_18</zorder>
+     <zorder>progressAlt</zorder>
+     <zorder>prevAlt</zorder>
+     <zorder>nextAlt</zorder>
+     <zorder>playAlt</zorder>
+     <zorder>minizeBtnAlt</zorder>
+     <zorder>loginBtnAlt</zorder>
+     <zorder>label_20</zorder>
+    </widget>
+    <widget class="QSlider" name="skin_progress">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>361</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="skin_filename">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>30</y>
+       <width>261</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift Light</family>
+       <pointsize>10</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Programmer: Emmanuel Basikolo</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="skin_title">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>50</y>
+       <width>261</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>BE Next Step Inc.</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="skin_power">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>0</y>
+       <width>24</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/icons/res/Icons/power.svg</normaloff>:/icons/res/Icons/power.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="skin_prev">
+     <property name="geometry">
+      <rect>
+       <x>117</x>
+       <y>124</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/icons/res/Icons/skip-back.svg</normaloff>:/icons/res/Icons/skip-back.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>36</width>
+       <height>36</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="skin_next">
+     <property name="geometry">
+      <rect>
+       <x>211</x>
+       <y>124</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/icons/res/Icons/skip-forward.svg</normaloff>:/icons/res/Icons/skip-forward.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>36</width>
+       <height>36</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="skin_menu">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>124</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/icons/res/Icons/menu.svg</normaloff>:/icons/res/Icons/menu.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>36</width>
+       <height>36</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="skin_background">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>0</width>
+       <height>0</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(36, 36, 48);
+
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="skin_circle">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>110</y>
+       <width>61</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/icons/res/Icons/circle.svg</normaloff>:/icons/res/Icons/circle.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>60</width>
+       <height>52</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="skin_mask_label">
+     <property name="geometry">
+      <rect>
+       <x>157</x>
+       <y>117</y>
+       <width>46</width>
+       <height>46</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="skin_play">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>120</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/icons/res/Icons/play-circle.svg</normaloff>:/icons/res/Icons/play-circle.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="skin_pos_text">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="skin_minimize">
+     <property name="geometry">
+      <rect>
+       <x>325</x>
+       <y>6</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/icons/res/Icons/minus.svg</normaloff>:/icons/res/Icons/minus.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="skin_window_title">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>271</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Emmanuel Basikolo</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="skin_show_volume">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>130</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/icons/res/Icons/volume-1.svg</normaloff>:/icons/res/Icons/volume-1.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QFrame" name="skin_volume_frame">
+     <property name="geometry">
+      <rect>
+       <x>309</x>
+       <y>-1</y>
+       <width>31</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#skin_volume_frame{
+	background-color: qlineargradient(spread:pad, x1:0.473178, y1:1, x2:0.489, y2:0, stop:0 rgba(31, 255, 107, 221), stop:1 rgba(255, 0, 4, 235));
+	border-radius: 15px;
+}
+
+QSlider::groove:vertical {
+                background: #ccc;
+                width: 6px;
+                border-radius: 3px;
+                margin: 0px;
+            }
+            QSlider::handle:vertical {
+                background: red;
+                border: 2px solid #777;
+                width: 6px; /* Adjust handle width to match the groove */
+                height: 6px; /* Adjust handle height to match the groove */
+                border-radius: 3px; /* Keep it circular */
+                margin: -3px -3px; /* Adjust margins to center the handle */
+            }</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="skin_add_volume_btn">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>32</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/plus.svg</normaloff>:/icons/res/Icons/plus.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="skin_minus_volume_btn">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>114</y>
+        <width>32</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/res/Icons/minus.svg</normaloff>:/icons/res/Icons/minus.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QSlider" name="skin_volume_slider">
+      <property name="geometry">
+       <rect>
+        <x>1</x>
+        <y>30</y>
+        <width>31</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </widget>
+    <zorder>skin_background</zorder>
+    <zorder>headerFrame</zorder>
+    <zorder>visualizerFrame</zorder>
+    <zorder>controlFrame</zorder>
+    <zorder>volControlFrame</zorder>
+    <zorder>threeAudioFrame</zorder>
+    <zorder>seekFrame</zorder>
+    <zorder>settingsFrame</zorder>
+    <zorder>loginFrame</zorder>
+    <zorder>registerFrame</zorder>
+    <zorder>playlistFrame</zorder>
+    <zorder>volFrame_2</zorder>
+    <zorder>headerFrameAlt</zorder>
+    <zorder>statusFrame</zorder>
+    <zorder>skin_progress</zorder>
+    <zorder>skin_filename</zorder>
+    <zorder>skin_title</zorder>
+    <zorder>skin_power</zorder>
+    <zorder>skin_prev</zorder>
+    <zorder>skin_next</zorder>
+    <zorder>skin_menu</zorder>
+    <zorder>skin_circle</zorder>
+    <zorder>skin_mask_label</zorder>
+    <zorder>skin_play</zorder>
+    <zorder>skin_pos_text</zorder>
+    <zorder>skin_minimize</zorder>
+    <zorder>skin_window_title</zorder>
+    <zorder>skin_show_volume</zorder>
+    <zorder>skin_volume_frame</zorder>
+   </widget>
+   <widget class="QPushButton" name="skin_expand_right">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resources.qrc">
+      <normaloff>:/icons/res/Icons/chevron-right.svg</normaloff>:/icons/res/Icons/chevron-right.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="skin_expand_left">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resources.qrc">
+      <normaloff>:/icons/res/Icons/chevron-left.svg</normaloff>:/icons/res/Icons/chevron-left.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="skin_settings">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resources.qrc">
+      <normaloff>:/icons/res/Icons/tool.svg</normaloff>:/icons/res/Icons/tool.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

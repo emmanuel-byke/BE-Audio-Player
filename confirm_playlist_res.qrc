@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>res/Icons/share.svg</file>
+    <file>res/Icons/share-2.svg</file>
+    <file>res/Icons/arrow-left.svg</file>
+    <file>res/Icons/arrow-left-circle.svg</file>
+    <file>res/Icons/toggle-left.svg</file>
+    <file>res/Icons/toggle-right.svg</file>
+    <file>res/Icons/check.svg</file>
+    <file>res/Icons/check-circle.svg</file>
+    <file>res/Icons/check-square.svg</file>
+    <file>res/Icons/image.svg</file>
+  </qresource>
+</RCC>

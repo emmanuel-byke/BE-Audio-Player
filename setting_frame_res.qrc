@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="Icons">
+    <file>D:/Projects/newPy/QT_Project/Player/res/Icons/x.svg</file>
+    <file>D:/Projects/newPy/QT_Project/Player/res/Icons/minimize-2.svg</file>
+    <file>D:/Projects/newPy/QT_Project/Player/res/Icons/minimize.svg</file>
+    <file>D:/Projects/newPy/QT_Project/Player/res/Icons/minus.svg</file>
+    <file>D:/Projects/newPy/QT_Project/Player/res/Icons/arrow-left.svg</file>
+  </qresource>
+</RCC>

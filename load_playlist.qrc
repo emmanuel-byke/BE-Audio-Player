@@ -1,0 +1,18 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>res/Icons/arrow-left.svg</file>
+    <file>res/Icons/edit.svg</file>
+    <file>res/Icons/edit-2.svg</file>
+    <file>res/Icons/edit-3.svg</file>
+    <file>res/Icons/check-circle.svg</file>
+    <file>res/Icons/minus.svg</file>
+    <file>res/Icons/minus-circle.svg</file>
+    <file>res/Icons/minus-square.svg</file>
+    <file>res/Icons/plus.svg</file>
+    <file>res/Icons/plus-circle.svg</file>
+    <file>res/Icons/plus-square.svg</file>
+    <file>res/Icons/arrow-left-circle.svg</file>
+    <file>res/Icons/arrow-right.svg</file>
+    <file>res/Icons/arrow-right-circle.svg</file>
+  </qresource>
+</RCC>
